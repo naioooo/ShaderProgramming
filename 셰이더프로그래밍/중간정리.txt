@@ -50,7 +50,9 @@ Lecture1_1
 고정그래픽스 파이프라인에서 프로그램 가능한 그래픽스 파이프라인으로 변화
 
 시험!!
-고정 그래픽스 파이프라인이란?
+고정 그래픽스 파이프라
+
+인이란?
 1. Vertex Transform
 2. Primitive Assembly
 3. Rasterization and Interpolation
