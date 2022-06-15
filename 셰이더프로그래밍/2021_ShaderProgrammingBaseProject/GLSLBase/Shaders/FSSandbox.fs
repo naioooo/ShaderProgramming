@@ -13,8 +13,8 @@ uniform float u_Time;
 vec4 CrossPattern()
 {
 	vec4 returnValue = vec4(1);
-	float XAxis = sin(10 * v_Color.x*2*PI + PI/2 + PI ); // ³¡ ±ò²û ½ÃÇè
-	float YAxis = sin(10 * v_Color.y*2*PI + PI/2  + PI);
+	float XAxis = sin(5 * v_Color.x*2*PI + PI/10 ); // ³¡ ±ò²û ½ÃÇè
+	float YAxis = sin(5 * v_Color.y*2*PI + PI - PI/10);
 	
 	float resultColor = max(XAxis, YAxis);
 	returnValue = vec4(resultColor);

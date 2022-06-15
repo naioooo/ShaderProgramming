@@ -8,7 +8,7 @@ in vec2 v_TexCoord;
 void main()
 {
 	float dis = distance(vec2(0), v_TexCoord);
-	if(dis < 0.05)
+	if(dis < 0.025)
 	{
 		FragColor = v_Color;
 	}

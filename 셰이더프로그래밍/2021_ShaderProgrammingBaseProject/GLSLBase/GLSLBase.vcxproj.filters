@@ -65,6 +65,24 @@
     <None Include="Shaders\FullRect.vs">
       <Filter>Shader</Filter>
     </None>
+    <None Include="Shaders\TextureSandbox.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shaders\TextureSandbox.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shaders\Dummymesh.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shaders\Dummymesh.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shaders\FullRectTex.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shaders\FullRectTex.vs">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />

@@ -29,6 +29,10 @@ public:
 	void Lecture4_RadarCircle();
 	void Lecture5_LineSegment();
 	void Lecture5_FullRect();
+	void Lecture6_TexSandbox();
+	void Lecture9_DummyMesh();
+	void Lecture11_DrawFullScreenTexture(GLuint texID);
+	void Lecture11_FBORender();
 	
 private:
 	void Initialize(int windowSizeX, int windowSizeY);
@@ -38,6 +42,9 @@ private:
 	void CreateVertexBufferObjects(); 
 	void CreateParticle(int count);
 	void CreateLine(int SegCount);
+	void CreateTextures();
+	void CreateDummyMesh();
+	void CreateFBOs();
 
 	unsigned char * Renderer::loadBMPRaw(const char * imagepath, unsigned int& outWidth, unsigned int& outHeight);
 
@@ -88,5 +95,53 @@ private:
 	GLuint m_VBOLineSegmentCount = 0;
 
 	GLuint m_VBOFullRect = 0;
+
+	GLuint m_TexChecker = 0;
+	GLuint m_TextureSandboxShader = 0;
+	GLuint m_VBOTexSandbox = 0;
+	GLuint m_TexRGB = 0;
+
+	GLuint m_DummyMeshShader = 0;
+	GLuint m_DummyVertexCount = 0;
+	GLuint m_VBODummyMesh = 0;
+
+	GLuint m_FBOTexture0 = 0;
+	GLuint m_FBOTexture1 = 0;
+	GLuint m_FBOTexture2 = 0;
+	GLuint m_FBOTexture3 = 0;
+	GLuint m_FBOTexture4 = 0;
+	GLuint m_FBOTexture5 = 0;
+	GLuint m_FBOTexture6 = 0;
+	GLuint m_FBOTexture7 = 0;
+	GLuint m_FBOTexture8 = 0;
+	GLuint m_FBOTexture9 = 0;
+
+	GLuint m_RBDepth0 = 0;
+	GLuint m_RBDepth1 = 0;
+	GLuint m_RBDepth2 = 0;
+	GLuint m_RBDepth3 = 0;
+	GLuint m_RBDepth4 = 0;
+	GLuint m_RBDepth5 = 0;
+	GLuint m_RBDepth6 = 0;
+	GLuint m_RBDepth7 = 0;
+	GLuint m_RBDepth8 = 0;
+	GLuint m_RBDepth9 = 0;
+
+
+	GLuint m_FBO0 = 0;
+	GLuint m_FBO1 = 0;
+	GLuint m_FBO2 = 0;
+	GLuint m_FBO3 = 0;
+	GLuint m_FBO4 = 0;
+	GLuint m_FBO5 = 0;
+	GLuint m_FBO6 = 0;
+	GLuint m_FBO7 = 0;
+	GLuint m_FBO8 = 0;
+	GLuint m_FBO9 = 0;
+
+
+	GLuint m_FullRectTexShader = 0;
+
+
 };
 

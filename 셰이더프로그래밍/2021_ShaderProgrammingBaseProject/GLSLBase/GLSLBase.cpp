@@ -34,7 +34,10 @@ void RenderScene(void)
 	//g_Renderer->Lecture4_Raindrop();
 	//g_Renderer->Lecture4_RadarCircle();
 	//g_Renderer->Lecture5_LineSegment();
-	g_Renderer->Lecture5_FullRect();
+	//g_Renderer->Lecture5_FullRect();
+	g_Renderer->Lecture6_TexSandbox();
+	//g_Renderer->Lecture9_DummyMesh();
+	//g_Renderer->Lecture11_FBORender();
 
 	glutSwapBuffers();
 }

@@ -27,7 +27,15 @@ void main()
     vec3 newPos;
 	float t = u_Time - a_EmitTime;
 	float tt = t * t;
-	if(t > 0)
+
+	
+	if(bLoop && t >= a_LifeTime)
+	{
+	    t = mod(t, a_LifeTime);
+		tt = t * t;
+	}
+
+	if(t > 0 && t < a_LifeTime)
 	{   
 	    vec3 newAccel = g_Gravity + a_Velocity;
 
@@ -53,6 +61,8 @@ void main()
 		newPos.z = 0;
 
 	    v_Color = a_Color * (1.0 - fractional);
+
+
 	}
 	else
 	{
